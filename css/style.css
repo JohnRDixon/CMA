@@ -7,6 +7,23 @@ header{
 
 }
 
+
+a:link{
+	color: #db2c42;
+}
+
+a:hover{
+	color: #cecece;
+}
+
+a:active{
+	color: #ffffff;
+}
+
+a:visited{
+	color: #db2c42;
+}
+
 .main_nav ul{
 	border-radius: 5px;
 	border: 1px solid #cecece;
@@ -52,7 +69,10 @@ header{
 .search{
 	background-color: #edeced;
 	padding: 10px;
+	margin: 0 auto;
 	margin-bottom: 20px;
+	width: 80%;
+	
 }
 
 .search input{
@@ -78,7 +98,9 @@ header{
 	border-top: 1px solid #cecece;
 	width: 80%;
 	margin: 0 auto;
+	margin-bottom: 20px;
 	text-align: left;
+	border-bottom: 1px solid #cecece;
 }
 
 .membership h2{
@@ -99,6 +121,8 @@ header{
 	text-align: center;
 	margin: 0 auto;
 	padding: 10px;
+	
+
 }
 .wrapper label{
 	display: block;
@@ -118,27 +142,46 @@ header{
 }
 
 .descriptors ul{
-	list-style: none;
 	background-color: #ffffff;
 	width: 60%;
 	margin: 0 auto;
-	
+	list-style: none;
+	text-align: left;
 
 }
 
-.nest li{
+
+
+.descriptors .nest ul{
 	list-style-type: disc;
-	margin: 0 auto;
-	
+	text-align: left;
 }
+
+.descriptors .nest li{
+	list-style: disc;
+
+}
+
 
 .level{
-	text-align: left;
+	text-align: right;
 	display: block;
+	font-size: smaller;
 }
 
 .level h3{
 	text-align: center;
+}
+
+
+.level label{
+	display: inline-block;
+	text-align: left;
+	padding: 5px;
+}
+
+.level input{
+	float: left;
 }
 
 .additional h3{
@@ -146,7 +189,17 @@ header{
 }
 
 .additional {
-	text-align: left;
+	text-align: center;
+}
+
+.additional label{
+	display: inline-block;
+	padding: 5px;
+}
+
+.additional input{
+	float: left;
+
 }
 
 .additional button{
@@ -155,30 +208,25 @@ header{
 	padding: 10px;
 	color: white;
 	border-radius: 5px;
-	border: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: 1px solid #cecece;
+	margin-top: 20px;
 }
 
-.secondary_nav ul{
-	border-radius: 5px;
-	border: 1px solid #cecece;
-	border-bottom: none;
+.secondary_nav{
 	width: 80%;
-	margin: 0 auto;
-	padding:0;
-	text-align: center
-}
-.secondary_nav li{
-	list-style: none;
-	border-bottom: 1px solid #cecece;
-	color: red;
 	text-align: center;
-	padding: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-top: 1px solid #cecece;
 }
 .secondary_nav ul{
 	border-radius: 5px;
 	border: 1px solid #cecece;
 	border-bottom: none;
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	padding:0;
 }
@@ -219,11 +267,21 @@ footer{
 
 blockquote{
 	color: #fdfdfd;
+	text-align: center;
+	padding-top: 20px;
 }
 
-.bottom ul, li{
+.bottom ul{
 	list-style: none;
-	display: inline-block;
+	
+	margin: 0;
+	padding: 0;
+	text-align: center
+}
+
+.bottom li{
+	list-style: none;
+	display: inline;
 }
 
 .bottom a:link{
@@ -240,4 +298,97 @@ blockquote{
 
 .bottom a:visited{
 	color: #59c1e0;
+}
+
+
+@media screen and (min-width: 660px){
+	
+	.wrapper form{
+		text-align: left;
+	}
+
+	.wrapper input{
+		display: block;
+	}
+
+	.column{
+	display: inline-block;
+    width: 47%;
+    padding: 1%;
+    vertical-align: top;
+    text-align: left;
+	}	
+
+	.descriptors ul{
+		width: 90%;
+		text-align: left;
+
+	}
+
+	.descriptors h3{
+		text-align: center;
+	}
+
+	.level label{
+		display: block;
+	}
+
+	.level input{
+		display: block;
+	}
+
+	.additional label{
+		display: block;
+	}
+
+	.additional input{
+		display: block;
+	}
+
+	.secondary_nav ul{
+		border: none;
+	}
+
+	.secondary_nav li{
+		border: none;
+	}
+
+	.column2{
+	display: inline-block;
+    width: 30%;
+    padding: 1%;
+    vertical-align: top;
+    text-align: center;
+	}
+
+	.column2 a{
+		text-decoration: underline;
+	}
+
+	.bottom blockquote{
+		display: block;
+
+	}
+
+}
+
+@media screen and (min-width: 840px){
+	header{
+		text-align: left;
+	}
+
+	.main_nav ul{
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.main_nav li{
+		display: inline-block;
+	}
+
+
+
+
+
 }
