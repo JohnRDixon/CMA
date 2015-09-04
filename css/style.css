@@ -74,7 +74,7 @@ a:visited{
 	
 }
 
-.search input{
+.search input[type=text]{
 	margin-bottom: 10px;
 	border-radius: 5px;
 	padding-top: 10px;
@@ -82,7 +82,7 @@ a:visited{
 	/*width: 80%;*/
 }
 
- .search button{
+ .search input[type=submit]{
 	width: 100%;
 	background-color: #db2c42;
 	padding: 10px;
@@ -116,13 +116,12 @@ a:visited{
 }
 .wrapper{
 	width: 80%;
-	text-align: center;
 	margin: 0 auto;
 	padding: 10px;
 	
 
 }
-.wrapper label{
+.textblock label{
 	display: block;
 	text-align: center;
 }
@@ -153,7 +152,9 @@ form{
 
 }
 
-
+.button_container{
+		border-top: 1px solid #cecece;
+	}
 
 .descriptors .nest ul{
 	list-style-type: disc;
@@ -166,20 +167,13 @@ form{
 }
 
 
-.level{
-	text-align: right;
-	display: block;
-	font-size: smaller;
-}
-
 .level h3{
 	text-align: center;
 }
 
 
 .level label{
-	display: inline-block;
-	text-align: left;
+	
 	padding: 5px;
 }
 
@@ -195,17 +189,14 @@ form{
 	text-align: center;
 }
 
-.additional label{
-	display: inline-block;
-	padding: 5px;
-}
+
 
 .additional input{
 	float: left;
 
 }
 
-.additional button{
+.button_container input[type=submit]{
 	width: 100%;
 	background-color: #db2c42;
 	padding: 10px;
@@ -219,7 +210,6 @@ form{
 }
 
 .secondary_nav{
-	width: 80%;
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -317,7 +307,6 @@ blockquote{
     width: 47%;
     padding: 1%;
     vertical-align: top;
-    text-align: left;
 	}	
 
 	.descriptors ul{
@@ -336,30 +325,14 @@ blockquote{
 		margin: 0;
 	}
 
-	.search button{
+	.search input[type=submit]{
 		display: inline-block;
-		width: 30%;
+		width: 35%;
 
 	}
 
 	.descriptors h3{
 		text-align: center;
-	}
-
-	.level label{
-		display: block;
-	}
-
-	.level input{
-		display: block;
-	}
-
-	.additional label{
-		display: block;
-	}
-
-	.additional input{
-		display: block;
 	}
 
 
@@ -385,6 +358,18 @@ blockquote{
 
 	.bottom blockquote{
 		display: block;
+		width: 30%;
+		text-align: center;
+		margin: 0 auto;
+
+	}
+
+
+	.button_container input[type=submit]{
+		width: 45%;
+		margin-right: 0;
+		margin-left: 50%;
+
 
 	}
 
@@ -417,6 +402,7 @@ blockquote{
 		background-color: #ffffff;
 	}
 
+
 	.membership{
 		border-top: 0;
 	}
@@ -425,10 +411,57 @@ blockquote{
 		background-color: #edeced;
 	}
 
-	.additional button{
+	.button_container input[type=submit]{
 		background-color: #60dbff;
 	}
 
+	.descriptors ul{
+		background-color: #cecece;
+	}
+	
+	
+
+
+
+}
+
+@media screen and (min-width: 1000px){
+	.button_container input[type=submit]{
+		background-color: #d43a4d;
+	}
+
+	.secondary_nav{
+		display: block;
+	}
+
+	.secondary_nav .column2{
+	display:block;
+    vertical-align: top;
+    text-align: center;
+	}
+
+	.secondary_nav{
+		display: inline-block;
+		width: 30%;
+		border-top: 0px solid;
+		border-left: 1px solid #cecece;
+		vertical-align: top;
+
+	}
+
+	.membership{
+		display: inline-block;
+		width: 60%;
+		vertical-align: top;
+	}
+
+	.column2{
+	display: inline-block;
+    width: 29%;
+    padding: 1.2%;
+    vertical-align: top;
+    text-align: center;
+	}
 
 
 }
