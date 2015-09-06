@@ -393,6 +393,7 @@ blockquote{
 		display: inline-block;
 		border: none;
 		padding-bottom: 0;
+		margin: 0;
 	}
 
 	.search{
@@ -449,6 +450,13 @@ blockquote{
 
 	}
 
+	.secondary_nav ul{
+		padding:0;
+	}
+
+
+
+
 	.membership{
 		display: inline-block;
 		width: 60%;
@@ -461,6 +469,7 @@ blockquote{
     padding: 1.2%;
     vertical-align: top;
     text-align: center;
+    margin: 0;
 	}
 
 
