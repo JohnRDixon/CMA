@@ -310,24 +310,25 @@ blockquote{
 	}	
 
 	.descriptors ul{
-		
+		margin: 0;
 		text-align: left;
 
 	}
 
 	.search{
-		
+		text-align: center;
 	}
 
 	.search input [type=text]{
 		display: inline-block;
 		width: 60%;
-		margin: 0;
+		margin: 0 auto;
 	}
 
 	.search input[type=submit]{
 		display: inline-block;
 		width: 35%;
+		margin: 0 auto;
 
 	}
 
@@ -416,10 +417,17 @@ blockquote{
 		background-color: #60dbff;
 	}
 
-	.descriptors ul{
+	.descriptors {
 		background-color: #cecece;
 	}
 	
+	.column3{
+	display: inline-block;
+    width: 29%;
+    padding: 1.2%;
+    vertical-align: top;
+    text-align: center;
+	}
 	
 
 
